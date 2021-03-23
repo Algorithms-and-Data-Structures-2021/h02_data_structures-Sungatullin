@@ -133,7 +133,7 @@ namespace itis {
         assert(new_capacity > capacity_);  // не ошибается тот, кто ничего не делает ...
 
         // 1. выделяем новый участок памяти
-        auto new_data = new Element[capacity_];
+        auto new_data = new Element[new_capacity];
 
         // 2. копируем данные на новый участок
         std::copy(data_, data_ + size_, new_data);
